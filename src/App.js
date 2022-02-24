@@ -35,12 +35,12 @@ const App = () => {
     <div className="App">
       <div className="header">
         <div className="logoContainer">
-          <img src={pokeballLogo} className="pokeballLogo" alt="" />
+          <img src={pokeballLogo} className="pokeballLogo" alt="pokeballLogo" />
         </div>
 
         <div className="searchBar">
           <div className="searchIconContainer">
-            <img src={searchIcon} />
+            <img src={searchIcon} alt="searchIcon" />
           </div>
           <form onSubmit={handleSubmit}>
             <label>
@@ -54,14 +54,14 @@ const App = () => {
           </form>
         </div>
         <div className="logoContainer">
-          <img src={sand} className="sandlogo" alt="" />
+          <img src={sand} className="sandlogo" alt="sandLogo" />
         </div>
       </div>
 
       {pokemonData.map((data) => {
         return (
           <div className="pokemonCard">
-            <img src={data.sprites["front_default"]} />
+            <img alt="pokemon" src={data.sprites["front_default"]} />
             <hr></hr>
             <div className="details">
               <div className="name">
